@@ -10,14 +10,22 @@ html {
 
 .card {
     /* display, flex-direction */
+    display: flex;
+    flex-direction: column;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
 }
 
+
+
 .card__description {
     /* display, flex-direction, align-items */
+    display: flex;
+    flex-direction: column;
     padding: 15px 0;
+    align-items: center;
+    flex: 1;
 }
 
 .card__descriptionIcon {font-size: 32px; margin-bottom: 10px;}
@@ -41,6 +49,7 @@ html {
 
 .cardGroup {
     /* display */
+    display: flex;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -48,6 +57,8 @@ html {
   
     .cardGroup__card {
       /* flex-grow, flex-basis */
+      flex: 1;
+      flex-basis: 33%;
       border: none;
       border-radius: 0;
     }
